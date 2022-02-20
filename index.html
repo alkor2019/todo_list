@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./scss/css/font-awesome.min.css">
+    <title>Yapılacaklar Listesi</title>
+</head>
+<body>
+   <section class="vh-auto gradient-custom-2">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-12 col-xl-10">
+  
+          <div class="card mask-custom">
+            <div class="card-body p-4 text-white">
+  
+              <div class="text-center pt-3 pb-2">
+                <img src="/images/todo_img.png" alt="Check" width="100">
+                <h2 class="my-4">Yapılacaklar Listesi</h2>
+              </div>
+              <br>
+              <div class="text-center pt-3 pb-2" >
+                  <div class="row d-flex justify-content-around " >
+                    <div class="form-group col-md-4">
+                        <input id="todo-in-input" type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input id="date-in-input" type="date" value="" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                     <button class="btn btn-success r-btn" id="add-todo">Yeni Görev Ekle</button> 
+                    </div>
+                    
+                  </div>
+                
+              </div>
+
+              <hr style="border: 3px solid wheat;">
+  
+              <table class="table text-white mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Yapılacak Görev</th>
+                    <th scope="col">Tarih</th>
+                    <th scope="col">Görevin Durumu</th>
+                    <th scope="col">Görevi Kaldır</th>
+                  </tr>
+                </thead>
+                <tbody id="todo-list">
+                  <tr class="fw-normal">
+                   
+                    <td class="align-middle">
+                      <span >Call Sam For payments</span >
+                    </td>
+                    <td class="align-middle">
+                     20.03.2022
+                    </td>
+                    <td class="align-middle ">
+                        <h6 class="mb-0 "><span class="badge  bg-warning">Beklemede</span></h6>
+                      </td>
+                    <td class="align-middle">
+                        <button class="badge btn bg-danger">Görevi Kaldır</button>
+                      </td>
+                  </tr>
+
+                  <tr class="fw-normal">
+                   
+                    <td class="align-middle">
+                      <span >Call Sam For payments</span >
+                    </td>
+                    <td class="align-middle">
+                     10.02.2022
+                    </td>
+                    <td class="align-middle ">
+                        <h6 class="mb-0 "><span class="badge  bg-success">Tamamlandı</span></h6>
+                      </td>
+                    <td class="align-middle">
+                      <button class="badge btn  bg-danger">Görevi Kaldır</button>
+                      </td>
+                  </tr>
+                 
+                 
+                </tbody>
+              </table>
+  
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./todo.js"></script>
+  <script src="./ui.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html> 
+
